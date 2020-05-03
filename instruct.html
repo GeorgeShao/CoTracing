@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/secondary.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha256-rsPUGdUPBXgalvIj4YKJrrUlmLXbOb6Cp7cdxn1qeUc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrolly@0.0.1/jquery.scrolly.js" integrity="sha256-GR8ZQMA56bzRVL9JGnkVKucJYxzZ9Eiqj9GcXtJ+ikk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js" integrity="sha256-/CW3X7P8i0J1ZBO+OH4NemAoExJSg9I4RVGWHXPqeE4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js" integrity="sha256-3e+NvOq+D/yeJy1qrWpYkEUr6SlOCL5mHpc2nZfX74E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <title>CoTracing</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><a href="index.html">CoTracing<span> by DEGS</span></a></div>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://devpost.com/software/cotracing">About this project</a></li>
+            <li><a href="app.html">App</a></li>
+            <li><a href="submit.html">Submit Patient Data</a></li>
+            <li><a href="instruct.html">How to use</a></li>
+            <li><a href="heatmap.html">Heatmap</a></li>
+        </ul>
+    </nav>
+    <article class="box" style="background-image:url('./images/banner.jpg'); margin-bottom: 0px;">
+            <ol style="margin-left: 10em; margin-top: 30px; font-size: 16px; letter-spacing: normal; color: #e2e8f0;">
+                <li>
+                    <p id="para">Visit <a href="https://takeout.google.com/settings/takeout" target="_blank">Google Takeout</a> and login with your Google account.</p>
+                </li>
+                <li>
+                    <p id="para">Deselect all items except for "Location History". Click next step.</p>
+                    <img src="./images/screenshot1.png">
+                </li>
+                <li>
+                    <p id="para">Follow the prompts displayed on screen, selecting export once as a .zip file.</p>
+                </li>
+                <li>
+                    <p id="para">Within a few minutes, you should receive an email to download the contents of the takeout.</p>
+                    <img src="./images/screenshot2.png">
+                </li>
+                <li>
+                    <p id="para">Download and extract the archive.
+                    </p>
+                </li>
+                <li>
+                    <p id="para">Locate the .json file for the month you want to test under <strong>/Location History/Semantic Location History/2020</strong>.</p>
+                </li>
+                <li>
+                    <p id="para">Upload the relevant file to the web service.</p>
+                </li>
+            </ol>
+        
+    </article>
+
+</body>
+</html>
